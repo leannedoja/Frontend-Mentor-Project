@@ -1,0 +1,138 @@
+:root{
+     --soft-blue:hsl(215, 51%, 70%);
+     --cyan: hsl(178, 100%, 50%);
+     --main: hsl(217, 54%, 11%);
+     --card: hsl(216, 50%, 16%);
+     --line: hsl(215, 32%, 27%);
+     --white: hsl(0, 0%, 100%);
+}
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+html{
+     font-size: 18px;
+     font-family: "Outfit", "sans-serif";
+}
+img{
+     max-width: 100%;
+}
+.container ul{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: .5rem 0;
+     border-bottom: 1px solid var(--line);
+     
+}
+.container ul li{
+     display: flex;
+     align-items: center;
+}
+
+ul{
+     list-style: none;
+     font-weight: 300;
+}
+.container .main-img{
+position: relative;
+}
+.container .main-img div{
+    position: absolute; 
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 60%); ;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 0;
+}
+.container .main-img div:hover{
+  opacity: 1;
+  border-radius: 10px;
+}
+.container .main-img div img{
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+}
+p{
+     margin: 1rem 0;
+}
+body{
+     background-color: var(--main);
+     padding: 1.25rem;
+     
+}
+.white{
+     color: var(--white);
+}
+.white-two{
+     color: var(--white);
+     font-weight: 400;
+}
+
+/*new*/
+.white-two:hover{
+     color: var(--cyan);
+     cursor: pointer;
+}
+
+.l-blue{
+     color: var(--soft-blue);
+}
+.cyan{
+     color: var(--cyan);
+}
+.container{
+     padding: 1.25rem;
+     background-color: var(--card);
+     border-radius: 10px;
+     
+}
+.logo{
+     border-radius: 10px;
+}
+h2{
+     margin: 1rem 0.5rem 0.5rem 0;
+}
+ 
+/*new*/
+h2:hover{
+color: var(--cyan);
+cursor: pointer;
+}
+
+.avatar{
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     padding-top: .5rem;
+     
+}
+.face{
+     width: 2.5rem;
+     border-radius: 50%;
+     border: 1px solid var(--white);
+     margin-right: 1.5rem;
+}
+.attribution { 
+    font-size: 11px; text-align: center;
+ }
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+@media(min-width: 500px){
+     .container{
+          width: 450px;
+          margin: 0 auto 1rem;
+
+     }
+     
+
+}
